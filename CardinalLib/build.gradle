@@ -3,7 +3,10 @@ import java.text.SimpleDateFormat
 //
 // build.gradle in CardinalLib folder
 //
-apply plugin: 'com.android.library'
+plugins {
+    id 'com.android.library'
+
+}
 
 android {
 
@@ -26,5 +29,6 @@ android {
     }
     namespace = 'com.cardinalrobotics.cardinallib'
 }
+
 
 apply from: '../build.dependencies.gradle'
