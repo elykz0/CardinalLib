@@ -4,3 +4,10 @@
 #
 #jdk:
 #  -openjdk23
+before_install:
+  - wget https://download.java.net/java/early_access/jdk23/1/GPL/openjdk-23-ea+1_linux-x64_bin.tar.gz -O /home/jitpack/tools/jdk23/jdk23.tar.gz
+  - tar xzf /home/jitpack/tools/jdk23/jdk23.tar.gz
+  - export JAVA_HOME=$PWD/openjdk-23
+  - export PATH=$JAVA_HOME/bin:$PATH
+jdk:
+  - openjdk23
