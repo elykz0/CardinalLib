@@ -5,6 +5,7 @@ import java.text.SimpleDateFormat
 //
 plugins {
     id 'com.android.library'
+    id 'maven-publish'
 
 }
 
@@ -32,3 +33,17 @@ android {
 
 
 apply from: '../build.dependencies.gradle'
+
+afterEvaluate {
+    publishing {
+        publications {
+            release(MavenPublication) {
+                from components.findByName('release')
+
+                groupId = 'com.cardinalrobotics.cardinallib'
+                artifactId = 'CardinalLib'
+                version = '1.0'
+            }
+        }
+    }
+}
