@@ -27,3 +27,9 @@ allprojects {
 repositories {
     mavenCentral()
 }
+
+tasks.register('checkJavaVersion') {
+    doLast {
+        println "Java Version: ${System.getProperty('java.version')}"
+    }
+}
