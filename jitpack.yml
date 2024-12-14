@@ -4,7 +4,3 @@
 #
 #jdk:
 #  -openjdk23
-before_install:
-  - echo "Java Version: $(java -version)"
-jdk:
-  - openjdk23
