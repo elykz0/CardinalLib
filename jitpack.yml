@@ -15,3 +15,8 @@ before_install:
 jdk:
   -openjdk19
 
+build:
+  java:
+    version: 19
+  script:
+    - ./gradlew build
