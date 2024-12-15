@@ -13,4 +13,4 @@ before_install:
   - sdk use java 19.0.2-open
 
 jdk:
-  - openjdk19
+  - openjdk11
