@@ -24,10 +24,6 @@ android {
 
     compileSdkVersion 33
 
-    compileOptions {
-        sourceCompatibility JavaVersion.VERSION_19
-        targetCompatibility JavaVersion.VERSION_19
-    }
     namespace = 'com.cardinalrobotics.cardinallib'
 }
 
