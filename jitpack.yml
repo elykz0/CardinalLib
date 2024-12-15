@@ -4,3 +4,11 @@
 #
 #jdk:
 #  -openjdk23
+before_install:
+  - wget https://download.java.net/java/early_access/jdk19/8/GPL/openjdk-19.0.2_linux-x64_bin.tar.gz -O /home/jitpack/tools/jdk19/jdk19.tar.gz
+  - tar xzf /home/jitpack/tools/jdk19/jdk19.tar.gz
+  - export JAVA_HOME=$PWD/openjdk-19
+  - export PATH=$JAVA_HOME/bin:$PATH
+
+jdk:
+  - openjdk19
