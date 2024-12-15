@@ -12,14 +12,5 @@ before_install:
   - sdk install java 19.0.2-open
   - sdk use java 19.0.2-open
 
-install:
-  - export JAVA_HOME=/usr/lib/jvm/java-19-openjdk
-  - export PATH=$JAVA_HOME/bin:$PATH
-  - java -version
-
 jdk:
   - openjdk19
-
-build:
-  gradle:
-    - ":cardinallib:build"
