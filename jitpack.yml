@@ -3,4 +3,4 @@
 #  - sdk use java 19.0.2-open
 
 jdk:
-  - openjdk11
+  - openjdk17
