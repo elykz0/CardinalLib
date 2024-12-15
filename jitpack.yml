@@ -1,14 +1,6 @@
-#before_install:
-#  - sdk install java 23.0.1-open
-#  - sdk use java 23.0.1-open
-#
-#jdk:
-#  -openjdk23
 before_install:
-  - wget https://download.java.net/java/early_access/jdk19/8/GPL/openjdk-19.0.2_linux-x64_bin.tar.gz -O /home/jitpack/tools/jdk19/jdk19.tar.gz
-  - tar xzf /home/jitpack/tools/jdk19/jdk19.tar.gz
-  - export JAVA_HOME=$PWD/openjdk-19
-  - export PATH=$JAVA_HOME/bin:$PATH
+  - sdk install java 19.0.2-open
+  - sdk use java 19.0.2-open
 
 jdk:
-  - openjdk19
+  -openjdk19
