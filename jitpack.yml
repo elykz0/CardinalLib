@@ -8,3 +8,5 @@
 #jdk:
 #  - openjdk19
 
+jdk:
+  - openjdk19
