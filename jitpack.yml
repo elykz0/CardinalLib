@@ -9,4 +9,4 @@
 #  - openjdk19
 
 jdk:
-  - openjdk19
+  - openjdk11
