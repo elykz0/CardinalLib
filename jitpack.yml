@@ -1,16 +1,16 @@
-#before_install:
-#  - wget https://download.oracle.com/java/19/archive/jdk-19.0.2_linux-x64_bin.tar.gz -O /home/jitpack/tools/jdk19.tar.gz
-#  - mkdir -p /home/jitpack/tools/jdk19
-#  - tar -xzf /home/jitpack/tools/jdk19.tar.gz -C /home/jitpack/tools/jdk19 --strip-components=1
+before_install:
+  - wget https://download.java.net/java/GA/jdk23.0.1/c28985cbf10d4e648e4004050f8781aa/11/GPL/openjdk-23.0.1_linux-x64_bin.tar.gz -O /home/jitpack/tools/jdk19.tar.gz
+  - mkdir -p /home/jitpack/tools/jdk23
+  - tar -xzf /home/jitpack/tools/jdk19.tar.gz -C /home/jitpack/tools/jdk23 --strip-components=1
 #  - export JAVA_HOME=/home/jitpack/tools/jdk19
 #  - export PATH=$JAVA_HOME/bin:$PATH
 #
 #jdk:
 #  - openjdk19
-
-before_install:
-  - sdk install java 23.0.1-oracle-open
-  - sdk use java 23.0.1-oracle-open
+#
+#before_install:
+#  - sdk install java 23.0.1-oracle-open
+#  - sdk use java 23.0.1-oracle-open
 
 jdk:
-  - openjdk23.0.1
+  - openjdk23
