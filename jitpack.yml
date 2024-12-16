@@ -8,7 +8,7 @@
 #jdk:
 #  - openjdk19
 
-before_install:
-  - sdk install java 19.0.2-oracle-open
-  - sdk use java 19.0.2-oracle-open
+#before_install:
+#  - sdk install java 19.0.2-oracle-open
+#  - sdk use java 19.0.2-oracle-open
 
